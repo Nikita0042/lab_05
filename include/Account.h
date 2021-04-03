@@ -17,7 +17,7 @@ class Account {
   virtual void Unlock();
   
   int id() const { return id_; }
-
+  
  private:
   int id_;
   int balance_;
