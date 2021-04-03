@@ -7,7 +7,7 @@ script:
 - cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS=ON
 - cmake --build _build
 - cmake --build _build --target test -- ARGS=--verbose
-- _build/check
   
 after_success:
-  - coveralls --root _build -E ".*gtest.*" -E ".*CMakeFiles.*"
+  - cd _build
+  - coveralls
