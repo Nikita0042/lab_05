@@ -9,5 +9,4 @@ script:
 - cmake --build _build --target test -- ARGS=--verbose
   
 after_success:
-  - cd _build
-  - coveralls
+  - coveralls --root . -E ".*gtest*" -E ".*CMakeFiles*"
