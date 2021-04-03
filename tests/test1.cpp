@@ -28,7 +28,6 @@ TEST(Account, LockingAndChangeBalance)
   
   try {
    a1.ChangeBalance(300);
-   a2.ChangeBalance(-100);
   }
   catch(std::runtime_error& e) {
    EXPECT_EQ(a1.GetBalance(), 100);
@@ -43,13 +42,6 @@ TEST(Account, LockingAndChangeBalance)
   EXPECT_EQ(a2.GetBalance(), 100);
   a1.Unlock();
   a2.Unlock();
-  
-  try {
-   a1.Unlock();
-  }
-  catch(std::runtime_error& e) {
-   EXPECT_EQ(a1.GetBalance(), 400);
-  }
   
   try {
    a1.ChangeBalance(200);
