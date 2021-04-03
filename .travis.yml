@@ -5,4 +5,7 @@ script:
 - cmake --build _build
 - cmake --build _build --target test -- ARGS=--verbose
 
-after_success: coveralls
+
+script: "sbt clean coverage test"
+
+after_success: "sbt coveralls"
