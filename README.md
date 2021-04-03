@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Spardoks/lab05.svg?branch=master)](https://travis-ci.org/Spardoks/lab05_homework)
 
+[![Coverage Status](https://coveralls.io/repos/github/Spardoks/lab05_homework/badge.svg?branch=master)](https://coveralls.io/github/Spardoks/lab05_homework?branch=master)
+
 ```
 $ cmake -H. -B_build -DBUILD_TESTS=ON
 $ cmake --build _build
