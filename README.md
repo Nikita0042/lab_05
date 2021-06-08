@@ -10,7 +10,7 @@ $ cmake --build _build
 $ cmake --build _build --target test
 
 $ _build/check
-$ cmake --build _build --target test -- ARGS=--verbose .
+$ cmake --build _build --target test -- ARGS=--verbose 
 ```
 
 [About old version of gmock, tutorial](https://youtu.be/jEaXP7XcuZg)
